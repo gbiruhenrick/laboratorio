@@ -39,3 +39,22 @@ terraform destroy
 - Uso de data source para buscar AMIs dinamicamente
 - Gerenciamento de Key Pairs na AWS
 - Conexão SSH em instâncias EC2
+
+## Demonstração
+
+Servidor web rodando na instância EC2 provisionada pelo Terraform:
+
+![Servidor rodando](./terraform1.png)
+
+## Testando você mesmo
+
+1. Clone o repositório
+2. Configure suas credenciais AWS (`aws configure`)
+3. Crie um Key Pair na AWS e anote o nome
+4. No `main.tf`, altere `key_name` para o nome do seu Key Pair
+5. Rode `terraform init` e `terraform apply`
+6. Conecte via SSH:
+
+```bash
+ssh -i "sua-chave.pem" ubuntu@<IP_PUBLICO>
+```
