@@ -1,5 +1,4 @@
-Aqui vai, pode copiar e colar direto:
-markdown# Gmail Cleaner
+
 
 Script Python que deleta todos os emails sem estrela da sua conta Gmail.
 
